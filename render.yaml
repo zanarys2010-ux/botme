@@ -1,1 +1,7 @@
 
+services:
+  - type: worker
+    name: bot-me
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
